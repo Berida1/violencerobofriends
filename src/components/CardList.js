@@ -3,10 +3,13 @@ import Card from "./Card";
 
 
 const CardList = ({ robots }) => {
+    if (true){
+        throw new Error ('noooooo!')
+    }
     return (
         <div>
             {
-                robots.map((user, i) => {
+                robots.map((users, i) => {
                     return (
                         < Card key={i}
                             id={robots[i].id}
@@ -17,7 +20,7 @@ const CardList = ({ robots }) => {
                 })
             }
         </div>
-    );
+    )
 }
 
 export default CardList;

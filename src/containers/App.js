@@ -28,10 +28,10 @@ class App extends Component {
     }
     render() {
         const { searchfield, robots } = this.state;
-        const filteredRobot = robots.filter(robot => {
-            return robot.name.toLowerCase().includes(searchfield.toLowerCase())
+        const filteredRobot = robots.filter(robots => {
+            return robots.name.toLowerCase().includes(searchfield.toLowerCase())
         })
-
+       
         return !robots.length ?
             <h1>Loading!!!</h1> :
             (
@@ -46,7 +46,7 @@ class App extends Component {
                 </div>
             )
     }
-
+     
 }
 
 export default App
